@@ -1,23 +1,23 @@
 class Kobra < Formula
   desc "DevOps deployment swiss-army knife utility"
   homepage "https://github.com/kowabunga-cloud/kobra/"
-  version "0.2.0"
+  version "0.2.1"
 
   if OS.mac?
     if Hardware::CPU.intel?
-      url "https://github.com/kowabunga-cloud/kobra/releases/download/0.2.0/kobra_0.2.0_darwin_amd64.tar.gz"
-      sha256 "a86f177bc54e940c5f706e576178a21792744a7b463c9d0bbf75f4de824084c4"
+      url "https://github.com/kowabunga-cloud/kobra/releases/download/0.2.1/kobra_0.2.1_darwin_amd64.tar.gz"
+      sha256 "d597f369afd2dfc2fd49ed8e64297d958a96127de78803cf3b6e7d7aa5c9a829"
     elsif Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kowabunga-cloud/kobra/releases/download/0.2.0/kobra_0.2.0_darwin_arm64.tar.gz"
-      sha256 "de4460436c40db3ed0abbaeefa161bea1d70bd5da9c136761ea9ba4ec7ceb84f"
+      url "https://github.com/kowabunga-cloud/kobra/releases/download/0.2.1/kobra_0.2.1_darwin_arm64.tar.gz"
+      sha256 "41e1cddb4ffd22c4d70a9f2bf4b99feb314dafba01968d6c1fc356b79cbfdfd3"
     end
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/kowabunga-cloud/kobra/releases/download/0.2.0/kobra_0.2.0_linux_amd64.tar.gz"
-      sha256 "b83d1789c810796098b1e43f9b45ea12169eb87d7bad56bdf54e18d0722bb0fe"
+      url "https://github.com/kowabunga-cloud/kobra/releases/download/0.2.1/kobra_0.2.1_linux_amd64.tar.gz"
+      sha256 "771abb1ac970145904be041533aae5c11b5f4ba984d133fb48424ee61e3d98da"
     elsif Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kowabunga-cloud/kobra/releases/download/0.2.0/kobra_0.2.0_linux_arm64.tar.gz"
-      sha256 "085f664d78b688f7de01d8150349a29abae451d97ec852a323b9446068f1a3ab"
+      url "https://github.com/kowabunga-cloud/kobra/releases/download/0.2.1/kobra_0.2.1_linux_arm64.tar.gz"
+      sha256 "dd07126b89723232ab37ea85e1d4bf23dd4e7d7460ac5b9f3abf0f2e719ead61"
     end
   end
 
